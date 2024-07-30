@@ -28,6 +28,7 @@ public class Main {
             int n = random.nextInt(0, 100);
             numbers.add(n);
         }
+        // ordina la lista
         Collections.sort(numbers);
 
         return numbers;
@@ -36,6 +37,7 @@ public class Main {
     public static List<Integer> listaInversa(List<Integer> listaNumeri) {
         List<Integer> nuovaLista = new ArrayList<>(listaNumeri);
         List<Integer> inversa = new ArrayList<>(listaNumeri);
+        // inverte la lista
         Collections.reverse(inversa);
         nuovaLista.addAll(inversa);
         return nuovaLista;
@@ -49,7 +51,7 @@ public class Main {
             }
         } else {
             System.out.println("Stampa delle posizioni DISPARI: ");
-            for (int i = 0; i < listaNumeri.size(); i += 2) {
+            for (int i = 1; i < listaNumeri.size(); i += 2) {
                 System.out.println(listaNumeri.get(i) + " ");
             }
         }
