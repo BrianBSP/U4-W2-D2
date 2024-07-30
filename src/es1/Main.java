@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("----------- Esercizio 1 ------------");
         Scanner scanner = new Scanner(System.in);
         // utilizzato List per i duplicati
         List<String> paroleDuplicate = new ArrayList<>();
